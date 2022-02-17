@@ -1,0 +1,9 @@
+from stackOverflowAnswersGetter import StackOverflowAnswersGetter
+from wordVisualizer import WordVisualizer
+
+stackOverflowAnswersGetterInstance = StackOverflowAnswersGetter()
+stackOverflowAnswersGetterInstance.getStackOverflowAnswers()
+stackOverflowAnswersGetterInstance.formatWords()
+words = stackOverflowAnswersGetterInstance.words
+wordVisualizer = WordVisualizer(words)
+wordVisualizer.visualize(0.005)
